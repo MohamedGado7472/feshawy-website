@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Feshawy Cafe</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/coffeehouse.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<img src="wallpaper.jpg"  style="width:100%;height:100%" alt=" cafe"/>
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Open from 12pm to 2am</span>
+
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">Feshawy</br>Cafe</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">El-Hussein and Khan El-Khalili</span>
+  </div>
+
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE CAFE</span></h5>
+    <p>El-Fishawy Café got its first license in 1863 during the Khedive Ismail period. It was expanded gradually over the years and reached its top during Fahmy El-Fishawy ownership as he tried his best to turn the café into a unique place.</p>
+    <p>  El-Fishawy Café The café consists of a long pathway divided into several corners (Iwans) on both sides named after a renowned author or artists like Nagib Mahfouz corner, Ahmed Rami corner and Hafez Ibrahim Corner.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+    </div>
+    <img src="feshawy.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Opening hours:</strong> everyday from 12pm to 2am.</p>
+    <p><strong>Address:</strong>El-Hussein and Khan El-Khalili </p>
+  </div>
+  <div align="center">
+    <h1>Nagib Mahfouz at El-Fishawy café</h1>
+    <p style="max-width:700px" >Nagib Mahfouz, Nobel Laureate, was a regular at El-Fishawy café and he wrote most of his novels there.
+    He also loved being there in Ramadan listening to folk singers such as Mohammad Abdel Motleb and Mohammad El-Khalwy.</p>
+   <img src="nagib.jpg" style="width:100%;max-width:700px">
+</div>
+
+</div>
+
+  <!-- Menu Container -->
+  <div class="w3-container" id="menu">
+    <div class="w3-content" style="max-width:700px">
+
+      <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
+
+      <div class="w3-row w3-center w3-card w3-padding">
+        <a href="javascript:void(0)" onclick="openMenu(event, 'Hot ');" id="myLink">
+          <div class="w3-col s6 tablink">Hot Drinks </div>
+        </a>
+        <a href="javascript:void(0)" onclick="openMenu(event, 'Cold ');">
+          <div class="w3-col s6 tablink">Cold Drinks</div>
+        </a>
+      </div>
+
+      <div id="Hot " class="w3-container menu w3-padding-48 w3-card">
+        <h5>Tea</h5>
+        <p class="w3-text-grey">15 eg</p><br>
+
+        <h5>Tea with milk</h5>
+        <p class="w3-text-grey">20 eg</p><br>
+
+        <h5>Anise</h5>
+        <p class="w3-text-grey">20 eg</p><br>
+
+        <h5>Coffee</h5>
+        <p class="w3-text-grey">25 eg</p><br>
+
+        <h5>Helpa</h5>
+        <p class="w3-text-grey">20 eg</p>
+      </div>
+
+      <div id="Cold " class="w3-container menu w3-padding-48 w3-card">
+        <h5>Pepsi</h5>
+        <p class="w3-text-grey">25 eg</p><br>
+
+        <h5>Guava</h5>
+        <p class="w3-text-grey">25 eg</p><br>
+
+        <h5>Banana with Milk</h5>
+        <p class="w3-text-grey">30 eg</p><br>
+
+        <h5>strawberry</h5>
+        <p class="w3-text-grey">25 eg</p><br>
+
+        <h5>water</h5>
+        <p class="w3-text-grey">7 eg</p>
+      </div>
+
+    
+  </div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
+    <p>Find us at some address at some place.</p>
+    <img src="moo.jpg" class="w3-image" style="width:100%">
+    <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+    <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
+
